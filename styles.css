@@ -1,0 +1,138 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #e6e6e6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    background: #111;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #e10600;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 15%;
+    left: 8%;
+}
+
+.hero-overlay h1 {
+    font-size: 52px;
+    letter-spacing: 3px;
+}
+
+.hero-overlay p {
+    margin-top: 8px;
+    color: #e10600;
+    font-size: 18px;
+}
+
+/* STEAM BUTTON */
+.steam-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: #e10600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.steam-button:hover {
+    background: #ff1a14;
+    box-shadow: 0 0 15px rgba(225, 6, 0, 0.6);
+}
+
+.steam-button img {
+    width: 18px;
+    height: 18px;
+}
+
+/* GALLERY */
+.game-section {
+    padding: 60px 0;
+}
+
+.game-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.game-gallery img {
+    width: 100%;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.game-gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(225, 6, 0, 0.4);
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    border-top: 1px solid #1f1f1f;
+    padding: 25px 0;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
